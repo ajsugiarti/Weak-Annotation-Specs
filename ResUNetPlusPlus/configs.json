@@ -1,0 +1,27 @@
+{
+  "command": "train",
+  "experiment_name": "kmeans_mask_512x512_exp1",
+  "train":{
+    "image": "../EndoSRR-master/EndoRR_dataset/train/image",
+    "mask": "../EndoSRR-master/EndoRR_dataset/train/mask"},
+  "val":{
+    "image": "../EndoSRR-master/EndoRR_dataset/test/image",
+    "mask": "../EndoSRR-master/EndoRR_dataset/test/mask"},
+  "test":{
+    "image": "../EndoSRR-master/EndoRR_dataset/test/image",
+    "mask": "../EndoSRR-master/EndoRR_dataset/test/mask"},
+  "gpu": "0",
+  "num_epochs": 1,
+  "batch_size": 4,
+  "img_size_x": 512,
+  "img_size_y": 512,
+  "crop":true, 
+  "supervised_only": true,
+  "num_workers": 0,
+  "initial_lr": 1e-4,
+  "LRonPlateau": true,
+  "confidence_threshold": 0.9,
+  "weight_decay": 0.001,
+  "write_images": true,
+  "write_images_interval": 10
+}

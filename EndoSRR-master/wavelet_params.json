@@ -1,0 +1,15 @@
+{
+  "1": {
+    "experiment_name": "Saint-Pierre + Arnold module 1",
+    "kwargs": {
+      "wavelet_levels": 2,
+      "module2": false,
+      "dilation_iter": 2,
+      "median_kernel": 13,
+      "lower_thres_ratio": 0.85,
+      "contrast_ratio": 2
+    },
+    "dicescores": 66.74112566456925,
+    "weighted_f": 0.724813868138999
+  }
+}

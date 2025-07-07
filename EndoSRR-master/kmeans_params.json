@@ -1,0 +1,11 @@
+{
+  "tilesize": 32,
+  "k_global": 9,
+  "k_local": 5,
+  "k_local_min": 1,
+  "k_local_max": 204.8,
+  "blue_channel": false,
+  "dilation": 1,
+  "dicescores": 67.02641604724383,
+  "weighted_f": 0.675591290560688
+}
