@@ -212,6 +212,8 @@ def validation(model1, loader,
     for key, val in result_source_dict.items():
         result_source_dict[key] = val / num_samples
         
+    dice = result_source_dict['val_source_dice_score'] 
+    
     if writer is not None:
         writer.add_scalars(prefix + '_metrics', result_source_dict, epoch)
     
@@ -219,7 +221,7 @@ def validation(model1, loader,
                            prefix + '_source_loss': val_source_loss_avg,
                        },
                        epoch)
-        return val_source_loss_avg
+        return val_source_loss_avg, dice
     else:
         result_source_dict['val_losses'] = val_source_loss_avg
         im = input_data.permute(0,2,3,1).numpy()
