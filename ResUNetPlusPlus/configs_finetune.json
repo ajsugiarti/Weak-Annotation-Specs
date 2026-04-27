@@ -1,0 +1,24 @@
+{
+  "command": "finetune",
+  "experiment_name": "finetuning",
+  "train": "Keyframes_Dataset/groups",
+  "mask":"kmeans",
+  "test":{
+    "image": "Keyframes_Dataset/groups"},
+  "gpu": "0",
+  "num_epochs": 10,
+  "batch_size": 4,
+  "img_size_x": 320,
+  "img_size_y": 320,
+  "crop":true, 
+  "supervised_only": true,
+  "num_workers": 0,
+  "initial_lr": 1e-3,
+  "LRonPlateau": true,
+  "confidence_threshold": 0.9,
+  "weight_decay": 0.001,
+  "write_images": true,
+  "write_images_interval": 10,
+  "model": "kmeans_mask_512x512_exp1/model150.pt",
+  "num_finetune": 20
+}
